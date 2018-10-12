@@ -1,0 +1,246 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  background: url(../img/Layer.jpeg) no-repeat;
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.ba-menu {
+  padding: 22px 65px 60px 395px;
+}
+
+.ba-logo {
+  margin-right: 115px;
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+a + a {
+  margin-left: 45px;
+}
+
+.ba-menu-nav:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+.ba-burg {
+  text-align: right;
+  margin-left: 120px;
+}
+
+.ba-huarache {
+  background: url(../img/product_card.png) no-repeat;
+  width: 750px;
+  height: 430px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.ba-contant {
+  text-transform: uppercase;
+  position: relative;
+  top: 45px;
+  left: 250px;
+  max-width: 190px;
+}
+
+.ba-action {
+  background-color: #ffa60d;
+  width: 42px;
+  height: 24px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  top: 40px;
+  left: 172px;
+  text-align: center;
+  padding: 4px;
+}
+
+.ba-product {
+  color: blue;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.ba-product:hover {
+  cursor: pointer;
+}
+
+.ba-cross-big {
+  position: absolute;
+  left: 435px;
+  top: 142px;
+}
+
+.ba-cross-little {
+  position: absolute;
+  left: 568px;
+  top: 463px;
+}
+
+.ba-cross-small + .ba-cross-small {
+  margin-left: 16px;
+}
+
+.ba-contant-next {
+  position: absolute;
+  top: 270px;
+  left: 925px;
+  font-size: 22px;
+}
+
+.ba-contant-huarache {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: 245px;
+  left: 925px;
+}
+
+.ba-contant-size {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: 315px;
+  left: 925px;
+}
+
+.ba-button {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #000;
+  margin-bottom: 3px;
+  width: 118px;
+  height: 30px;
+  text-transform: uppercase;
+  font: 400 12px/1.2 Roboto;
+}
+
+.ba-button:hover {
+  color: white;
+  background-color: #a100b7;
+}
+
+.ba-button-div {
+  width: 120px;
+  position: absolute;
+  top: 390px;
+  left: 925px;
+}
+
+/*RATING STAR*/
+
+.ba-rating {
+  position: absolute;
+  top: 245px;
+  left: 980px;
+}
+
+.rating {
+  float: left;
+}
+
+/* Конструкция :not(:checked) работает как фильтр, чтобы браузеры, которые не поддерживают псевдокласс :checked не применяли эти свойства. Все браузеры, поддерживающие псевдокласс :checked, поддерживают и псевдокласс :not(), так что фильтр должен отработать правильно. */
+.rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0 0.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 50%;
+  line-height: 1.2;
+  color: #ddd;
+  text-shadow: 1px 1px #bbb, 2px 2px #666, 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+}
+
+.rating:not(:checked) > label:before {
+  content: "★ ";
+}
+
+.rating > input:checked ~ label {
+  color: #f70;
+  text-shadow: 1px 1px #c60, 2px 2px #940, 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod, 2px 2px #b57340,
+    0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ea0;
+  text-shadow: 1px 1px goldenrod, 2px 2px #b57340,
+    0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+}
+.rating > label:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+/*SIZE*/
+
+.ba-size-mult {
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: 340px;
+  left: 925px;
+}
+
+.ba-radio1:checked + label {
+  border: 1px solid #000;
+}
+
+.ba-radio2:checked + label {
+  border: 1px solid #000;
+}
+
+.ba-radio3:checked + label {
+  border: 1px solid #000;
+}
+
+.ba-radio4:checked + label {
+  border: 1px solid #000;
+}
+
+.ba-radio5:checked + label {
+  border: 1px solid #000;
+}
+
+.ba-radio1,
+.ba-radio2,
+.ba-radio3,
+.ba-radio4,
+.ba-radio5 {
+  display: none;
+}
+
+.ba-label + .ba-label {
+  padding-left: 20px;
+}
